@@ -973,6 +973,25 @@
   #tweaks-root { position: fixed; inset: 0; pointer-events: none; z-index: 100; }
   #tweaks-root > * { pointer-events: auto; }
 </style>
+<style>
+.connected-demo{background:#172c43;color:#f7f5f0;padding:clamp(48px,7vw,88px) 0;scroll-margin-top:90px}
+.connected-demo-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.connected-demo h2{font:400 clamp(42px,5vw,72px)/1.02 var(--display);margin:18px 0 24px;letter-spacing:-.025em}
+.connected-demo p{max-width:46ch;color:#d0dae5}
+.connected-demo .demo-label{font:12px var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.connected-demo .demo-button{display:inline-flex;padding:16px 22px;background:#f7f5f0;color:#172c43;border-radius:6px;font-weight:600;margin-top:14px;min-height:48px}
+.connected-demo a:focus-visible{outline:3px solid #bfd5ef;outline-offset:5px}
+.demo-preview{background:#f7f5f0;color:#172c43;border-radius:18px;padding:28px;border:1px solid #ffffff30}
+.demo-preview small{letter-spacing:.12em;font:11px var(--mono)}
+.demo-preview h3{font-size:27px;line-height:1.2;margin:18px 0 8px}
+.demo-preview p{color:#465b71;font-size:15px;margin:8px 0 24px}
+.demo-bars{display:flex;align-items:flex-end;gap:7px;height:90px;margin:28px 0}
+.demo-bars span{flex:1;background:#203d5c;border-radius:4px 4px 0 0;height:90%}
+.demo-bars span:nth-child(odd){height:38%;background:#8198b0}
+.demo-path{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #c5cfda;padding-top:20px;font-size:13px}
+.connected-demo .demo-note{font-size:12px;margin-top:16px;color:#bacbdd}
+@media(max-width:760px){.connected-demo-grid{grid-template-columns:1fr;gap:30px}.demo-preview{padding:24px}.connected-demo .demo-button{display:flex;justify-content:center;text-align:center}.nav-inner{gap:12px}.nav-inner>.nav-cta{font-size:10px;padding:10px 12px}}
+</style>
 </head>
 <body>
 
@@ -993,7 +1012,7 @@
       <a href="#moment-pos">The Moment</a>
       <a href="#advisory">Advisory</a>
     </div>
-    <a class="nav-cta" href="#newsletter">Subscribe</a>
+    <a class="nav-cta" href="#connected-workout">Workout demo ↗</a>
   </div>
 </nav>
 
@@ -1035,6 +1054,19 @@
     </div>
   </div>
 </section>
+<section class="connected-demo" id="connected-workout" aria-labelledby="connected-workout-title">
+<div class="wrap connected-demo-grid"><div>
+<div class="demo-label">Explore what I’m building</div>
+<h2 id="connected-workout-title">From an idea<br>to your <em>wrist.</em></h2>
+<p>The physical and digital worlds, connected through a workout. Explore three sample sessions and see how the experience will connect a plan, a Garmin device, and your activity afterward.</p>
+<a class="demo-button" href="/garmin/">Preview the workout experience <span aria-hidden="true">&nbsp;↗</span></a>
+<p class="demo-note">Preview available now. Live Garmin connection and syncing are in setup.</p>
+</div><div class="demo-preview" aria-label="Illustration of a sample interval workout">
+<small>SAMPLE WORKOUT · RUN</small><h3>A little structure.<br>A stronger session.</h3><p>30 minutes · Warm up, six intervals, cool down.</p>
+<div class="demo-bars" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+<div class="demo-path"><span>01 · Choose</span><span>02 · Move</span><span>03 · Review</span></div>
+</div></div></section>
+
 
 <!-- ============== MANIFESTO ============== -->
 <section class="manifesto" id="manifesto">
