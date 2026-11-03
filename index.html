@@ -181,6 +181,30 @@ html{scroll-padding-top:64px}
 #movie-position,.movie-disclosure{font-size:11px!important;opacity:.65;margin:12px 0 0}
 #sensor-story .sensor-steps{margin:16px 0}#sensor-story #lab-source{font-size:14px;min-height:44px}
 @media(max-width:700px){#sensor-story .lab-instrument{padding:22px}#sensor-story .lab-readout{padding:28px 22px}#movie-scene>svg{height:110px}.movie-caption{min-height:210px}#sensor-story .lab-metric{min-height:75px}.movie-caption p{font-size:16px}}
+
+#sensor-story .lab-instrument{background:#102238;color:#f7f5f0;padding:26px}
+#sensor-story .lab-state{color:#b5c9df;border-color:#ffffff25;font-size:10px}
+#movie-scene{margin:20px 0}
+.product-visual{position:relative;overflow:hidden;min-height:300px;border:1px solid #ffffff20;border-radius:20px;padding:22px;background:radial-gradient(ellipse at 25% 0%,#315578 0%,#192e48 45%,#0b192b 100%);box-shadow:0 18px 40px #0004,inset 0 1px 0 #ffffff15;color:#f4f7fc}
+.visual-top{display:flex;justify-content:space-between;gap:12px;font-size:9px;letter-spacing:.14em;color:#b4c6dc}
+.visual-status{white-space:nowrap}.visual-status i{display:inline-block;width:5px;height:5px;background:#a9d6ff;border-radius:50%;margin-right:5px;box-shadow:0 0 12px #8dcaff}
+.ride-dashboard{display:flex;gap:22px;align-items:center;margin:26px 0}
+.cadence-orbit{width:142px;height:142px;flex-shrink:0;border-radius:50%;padding:7px;background:conic-gradient(from 220deg,#84b9f1 0deg,#daeaff 250deg,#ffffff12 250deg 360deg);box-shadow:0 0 35px #8ab9e918}
+.cadence-orbit>div{height:100%;border-radius:50%;background:#14273e;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.cadence-orbit small{font-size:9px;letter-spacing:.15em;color:#c0d1e3}.cadence-orbit strong{font-size:49px;line-height:1.15;font-weight:500;letter-spacing:-3px}.cadence-orbit span{font-size:10px;color:#9eb4ce}
+.ride-bars{height:120px;display:flex;align-items:flex-end;gap:4px;flex:1;min-width:0}.ride-bars i{flex:1;height:var(--bar);background:linear-gradient(#afcff4,#426c9a);border-radius:4px 4px 0 0;transform-origin:bottom;animation:bars-in 1.2s both;animation-delay:var(--delay)}
+.visual-bottom{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #ffffff18;padding-top:15px;font-size:8px;letter-spacing:.1em;color:#93adc9}.visual-bottom strong{display:block;font-size:12px;letter-spacing:0;color:#ecf3fb;margin-top:5px}
+.visual-message{font-size:12px;line-height:1.5;background:#ffffff09;border:1px solid #ffffff12;border-radius:10px;padding:11px 13px;margin-top:18px;color:#d8e7f7}
+.home-heading{display:flex;align-items:center;justify-content:space-between;margin:30px 0;color:#bfcee0;font-size:14px}.home-heading strong{font-size:32px;color:#fff;font-weight:400}
+.home-track{display:grid;grid-template-columns:76px 1fr;align-items:center;gap:10px;margin:17px 0;font-size:11px;color:#becfe2}.home-track>div{display:flex;gap:4px;align-items:center;height:22px;background:#ffffff06;border-radius:4px;padding:0 5px}.home-track i{flex:1;height:4px;border-radius:2px;background:#ffffff10}.home-track .detected{height:19px;background:#9abfe9;box-shadow:0 0 8px #9abfe930}.home-track .quiet{background:#d7b990;height:4px;opacity:.6}.home-hours{display:flex;justify-content:space-between;margin-left:86px;font-size:9px;color:#859db8}
+.heat-display{display:flex;justify-content:center;padding:22px 0 12px}.heat-halo{width:184px;height:184px;padding:10px;border-radius:50%;background:conic-gradient(from 210deg,#8abbe5,#e9d7b9,#f5eee2,#ffffff0c 82%);box-shadow:0 0 50px #a7b6c820}.heat-core{height:100%;background:radial-gradient(at 40% 20%,#35485d,#122239);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center}.heat-core small{font-size:8px;letter-spacing:.14em;color:#c6d3e2}.heat-core strong{font-size:27px;font-weight:500;margin:10px 0}.heat-core span{font-size:10px;color:#aec3db}.heat-steps{display:flex;justify-content:center;gap:28px;font-size:11px;color:#607590}.heat-steps .lit{color:#e8d8bf}
+#sensor-story .lab-metric{font-size:28px;min-height:65px;margin:18px 0 0}#sensor-story .lab-metric small{color:#b6c7db;font-size:13px}
+#sensor-story .lab-instrument>svg{display:none}#sensor-story #lab-source{color:#bacbde}
+#sensor-story .sensor-steps span{border-color:#ffffff15;color:#91a8c3}#sensor-story .sensor-steps .active{border-color:#b2d1f1;color:#fff}
+#sensor-story .lab-instrument button{background:#e6eef7;color:#172b43;border-color:#e6eef7}#sensor-story .lab-instrument button+button{background:transparent;color:#e6eef7;border-color:#ffffff35}.movie-progress{background:#ffffff15}.movie-progress span{background:#c0daf5}
+@keyframes bars-in{from{transform:scaleY(.2);opacity:.3}to{transform:scaleY(1);opacity:1}}
+@media(max-width:700px){#sensor-story .lab-instrument{padding:20px}.product-visual{padding:18px;min-height:285px}.cadence-orbit{width:124px;height:124px}.ride-dashboard{gap:18px}.ride-bars{gap:3px}.visual-top{font-size:8px}.heat-halo{width:165px;height:165px}}
+@media(prefers-reduced-motion:reduce){.ride-bars i{animation:none}}
 </style><style>
 .explore-controls{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.explore-controls button{font:inherit;font-size:14px;min-height:46px;padding:10px 16px;border:1px solid currentColor;border-radius:24px;background:transparent;color:inherit;cursor:pointer}.explore-controls button[aria-pressed=true]{background:#f7f5f0;color:#172b43;border-color:#f7f5f0}.explore-controls button:focus-visible,.signal-lab input:focus-visible{outline:3px solid #8caed0;outline-offset:4px}
 .story-visual{margin:0;position:relative}.story-visual img{width:100%;height:290px;object-fit:cover;border-radius:12px;display:block}.story-visual figcaption{font-size:12px;margin-top:10px}.career-narrative .story-caption{font-size:17px;min-height:105px;margin:18px 0}.career-narrative .story-caption strong{display:block;color:#fff;margin-bottom:8px}
@@ -225,11 +249,12 @@ kitchen:[
 ['Ready','the moment becomes clear','The signal reaches the method’s ready point.','Timing becomes understanding.','The experience translates a temperature reading into a cue someone can use.','02 · Sensor state meets cooking intent',[90,70,45,25,20,20]],
 ['Add food','one clear next step','The technology recedes. The experience feels simple.','This is what I connect.','The physical world. The right context. A useful response. Different settings, the same way of thinking.','03 · A concept for a simpler everyday experience',[90,70,45,25,20,20]]
 ]};
-const sceneArt={
-training:'<circle cx="110" cy="95" r="37"/><circle cx="285" cy="95" r="37"/><path d="M110 95l57-64 48 64H110l36-80h35m-14 16h85l33 64m-45-82h29M215 95l37-64"/>',
-care:'<path d="M88 70l112-58 112 58v79H88Z"/><path d="M180 149V82h43v67M112 82h38v32h-38Zm143 0h30v32h-30Z"/><circle cx="204" cy="113" r="2"/>',
-kitchen:'<path d="M112 68h176v54q0 25-30 25H142q-30 0-30-25ZM112 82H80v29h32M288 82h32v29h-32M102 61h196M180 59V48h40v11M164 35q-12-10 0-21m36 21q-12-10 0-21m36 21q-12-10 0-21"/>'
-};
+function sceneVisual(kind,phase){
+ const top='<div class="visual-top"><span>CONNECTED EXPERIENCE</span><span class="visual-status"><i></i> DEMO</span></div>';
+ if(kind==='training')return '<div class="product-visual training-visual">'+top+'<div class="ride-dashboard"><div class="cadence-orbit"><div><small>CADENCE</small><strong>72</strong><span>RPM</span></div></div><div class="ride-bars">'+[32,45,39,62,51,74,65,83,71,88,73,91,80,87,76,83].map((v,i)=>'<i style="--bar:'+v+'%;--delay:'+i*45+'ms"></i>').join('')+'</div></div><div class="visual-bottom"><span>SESSION INTENT<strong>Easy ride</strong></span><span>PERSONAL CONTEXT<strong>'+(phase===0?'Waiting for feedback':phase===1?'Harder than usual':'Check resistance')+'</strong></span></div><div class="visual-message">'+['Movement, captured.','“This feels harder today.”','“Has the resistance changed?”'][phase]+'</div></div>';
+ if(kind==='care')return '<div class="product-visual care-visual">'+top+'<div class="home-heading"><span>Morning rhythm</span><strong>'+(phase===0?'07:15':'09:30')+'</strong></div><div class="home-tracks">'+['Kitchen','Front door','Living room'].map((name,i)=>'<div class="home-track"><span>'+name+'</span><div>'+Array.from({length:14},(_,j)=>'<i class="'+((i===0&&phase>0)?'quiet':((j*3+i)%5<2?'detected':''))+'"></i>').join('')+'</div></div>').join('')+'</div><div class="home-hours"><span>06:00</span><span>08:00</span><span>10:00</span></div><div class="visual-message">'+['Everyday moments form a pattern.','A change from the usual morning.','A clearer picture for the care professional.'][phase]+'</div></div>';
+ return '<div class="product-visual kitchen-visual">'+top+'<div class="heat-display"><div class="heat-halo"><div class="heat-core"><small>COOKING STATE</small><strong>'+['Warming','Ready','Add food'][phase]+'</strong><span>'+['Sensing temperature','Method ready point','Your next step'][phase]+'</span></div></div></div><div class="heat-steps"><span class="lit">Warm</span><span class="'+(phase>0?'lit':'')+'">Ready</span><span class="'+(phase>1?'lit':'')+'">Cook</span></div><div class="visual-message">'+['Temperature becomes a signal.','The right moment, made visible.','A simple cue. A useful action.'][phase]+'</div></div>';
+}
 const order=['training','care','kitchen'],names=['A workout','A day at home','In the kitchen'];
 let scenario='training',step=0,timer=null,started=false,playing=false,visible=false,remaining=6500,deadline=0,progress=null;
 const play=document.getElementById('sensor-play'),reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -240,7 +265,7 @@ function renderSensor(animate=true){
  document.querySelectorAll('[data-sensor-step]').forEach((el,i)=>{el.classList.toggle('active',i===step);if(i===step)el.setAttribute('aria-current','step');else el.removeAttribute('aria-current');});
  document.querySelectorAll('[data-scenario]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.scenario===scenario)));
  document.getElementById('lab-line').setAttribute('points',d[6].map((v,i)=>i*80+','+v).join(' '));
- document.getElementById('movie-scene').innerHTML='<svg viewBox="0 0 400 170" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">'+sceneArt[scenario]+'</svg><div class="movie-nodes"><span class="lit">Signal</span><i></i><span class="'+(step>0?'lit':'')+'">Context</span><i></i><span class="'+(step>1?'lit':'')+'">Response</span></div>';
+ document.getElementById('movie-scene').innerHTML=sceneVisual(scenario,step);
  document.getElementById('movie-position').textContent='Scene '+(chapter*3+step+1)+' of 9 · '+names[chapter];
  document.getElementById('sensor-next').textContent=chapter===2&&step===2?'Start again ↻':'Next scene →';
  if(animate&&!reduced){['movie-scene','lab-value','lab-unit','lab-source','lab-title','lab-copy','lab-context'].forEach(id=>document.getElementById(id).animate([{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:850,easing:'ease-out'}));}
