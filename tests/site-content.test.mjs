@@ -25,3 +25,11 @@ test('HTML pages have unique ids and valid local fragment links',()=>{
   for(const [,fragment] of html.matchAll(/href="#([^"]+)"/g)) assert.ok(ids.includes(fragment),'missing fragment '+fragment);
  }
 });
+
+test('hero actions are a matching primary and secondary pair without external arrows',()=>{
+ const actions=home.match(/<div class="hero-actions">(.*?)<\/div>/s)?.[1];
+ assert.ok(actions);
+ assert.match(actions,/class="button hero-primary" href="#applied-work">Explore my work<\/a>/);
+ assert.match(actions,/class="button hero-secondary" href="#contact">Let’s talk<\/a>/);
+ assert.doesNotMatch(actions,/↗/);
+});
