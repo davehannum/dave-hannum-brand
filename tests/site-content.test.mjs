@@ -33,3 +33,10 @@ test('hero actions are a matching primary and secondary pair without external ar
  assert.match(actions,/class="button hero-secondary" href="#contact">Let’s talk<\/a>/);
  assert.doesNotMatch(actions,/↗/);
 });
+test('career section gives a concise past-to-present story without changing contact paths',()=>{
+ const career=home.match(/<section class="career-proof wrap"[^>]*>([\s\S]*?)<\/section>/)?.[1];
+ assert.ok(career);
+ assert.match(career,/I’m building on my own terms/);
+ for(const milestone of ['MaxPerformer','1987','Old Dominion University','1992','Olympic Training Center','Western Kentucky University','1995','Technogym','1997','Functional Solutions','2015','2020','SVP of Product','Fire and Ice Wellness','MindDocket','Hannum Strategy']) assert.ok(career.includes(milestone),milestone);
+ assert.equal((career.match(/<li>/g)||[]).length,3);
+});
